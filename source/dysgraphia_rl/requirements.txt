@@ -1,0 +1,9 @@
+# Tested with Python 3.10-3.12 on Ubuntu 22.04 (CPU only; no GPU required
+# for this offline simulation-training slice of the project).
+# Versions actually used to produce the shipped checkpoint/results/tests in
+# this submission are noted alongside each minimum-version constraint.
+torch>=2.0          # tested with 2.13.0 (CPU build)
+gymnasium>=1.0       # tested with 1.3.0
+numpy>=1.24          # tested with 2.4.4
+matplotlib>=3.7      # tested with 3.10.8
+pytest>=7.0          # tested with 9.1.1

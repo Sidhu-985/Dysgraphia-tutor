@@ -1,0 +1,47 @@
+name: dysgraphia_tutor_tablet
+description: >
+  Tablet handwriting client for the RL-based adaptive handwriting
+  intervention system. Captures raw stylus/touch strokes (x, y, t,
+  pressure, stroke id) and talks to the FastAPI backend over REST.
+  Contains NO machine-learning / RL / feature-extraction logic -- all of
+  that lives in the backend; this app only captures input and renders
+  the backend's response.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.13.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  uuid: ^4.3.3
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Lexend (SIL Open Font License 1.1, assets/fonts/OFL-Lexend.txt):
+  # interface typeface, chosen for its wide, open letterforms. Latin subset
+  # converted from @fontsource/lexend 5.3.0. Bundled so the app needs no
+  # network access to render text.
+  fonts:
+    - family: Lexend
+      fonts:
+        - asset: assets/fonts/Lexend-400.ttf
+          weight: 400
+        - asset: assets/fonts/Lexend-500.ttf
+          weight: 500
+        - asset: assets/fonts/Lexend-600.ttf
+          weight: 600
+        - asset: assets/fonts/Lexend-700.ttf
+          weight: 700
+        - asset: assets/fonts/Lexend-800.ttf
+          weight: 800

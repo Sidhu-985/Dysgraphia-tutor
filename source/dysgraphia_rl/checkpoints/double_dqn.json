@@ -1,0 +1,16 @@
+{
+ "source_run": "R12_4",
+ "which": "best",
+ "sha256": "411b7d07da82322d98866c5d912c40d1c856d281856da4cdb05605426fb505cf",
+ "format": "main-project double_dqn_agent.save()",
+ "note": "SIMULATION-trained policy (Phase 5 full run, locked protocol configs/phase5.yaml v1, seed R12_4). Trained in dgpop child-start simulator; evaluated in DysgraphiaTutorEnv; passed the backend behavioural gate. NOT validated on real children. Replaces the legacy 2026-11-08 checkpoint (backed up at backup_pre_R12_4/double_dqn_legacy_2026-11-08.pt). Roll back: copy that backup file back to double_dqn.pt and restart the backend.",
+ "eval_in_tutor_main_env_200episodes": {
+  "checkpoint_quality_gain_mean": 0.057,
+  "checkpoint_return_mean": 25.31,
+  "rule_based_quality_gain_mean": -0.1208,
+  "rule_based_return_mean": 5.0,
+  "do_nothing_quality_gain_mean": -0.2407,
+  "do_nothing_return_mean": -8.68
+ },
+ "gate_check_passed": true
+}

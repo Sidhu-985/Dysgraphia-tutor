@@ -1,0 +1,19 @@
+# Backend (FastAPI + preprocessing/feature-extraction/state/safety/
+# intervention pipeline) dependencies. Includes the dysgraphia_rl/
+# package's own dependencies since the backend imports it directly
+# (see app/dysgraphia_rl_bridge.py) -- no need to separately install
+# dysgraphia_rl/requirements.txt if you install this file.
+#
+# Tested with Python 3.11/3.12 on Windows and Linux (CPU only).
+
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+pydantic-settings>=2.2
+numpy>=1.24
+scipy>=1.11
+torch>=2.0
+gymnasium>=1.0
+matplotlib>=3.7
+pytest>=7.0
+httpx>=0.27          # required by fastapi.testclient.TestClient
